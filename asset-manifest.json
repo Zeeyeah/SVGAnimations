@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/SVGAnimations/static/css/main.519b14e4.css",
+    "main.js": "/SVGAnimations/static/js/main.cd437c1a.js",
+    "static/media/Space.svg": "/SVGAnimations/static/media/Space.b4e167287a6443a04255e94915f1d168.svg",
+    "static/media/Zenitsu_1.svg": "/SVGAnimations/static/media/Zenitsu_1.69a6f5d6dc176d5bb03b472772dbd2a6.svg",
+    "static/media/Stars.svg": "/SVGAnimations/static/media/Stars.83c7084df294e191d387a60eca49c727.svg",
+    "static/media/Girl.svg": "/SVGAnimations/static/media/Girl.68b15bfb3272f2d13a09fb7b5ba7ff1a.svg",
+    "static/media/Jupiter.svg": "/SVGAnimations/static/media/Jupiter.31a41112406c6557b315e35df3f2dae4.svg",
+    "index.html": "/SVGAnimations/index.html",
+    "main.519b14e4.css.map": "/SVGAnimations/static/css/main.519b14e4.css.map",
+    "main.cd437c1a.js.map": "/SVGAnimations/static/js/main.cd437c1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.519b14e4.css",
+    "static/js/main.cd437c1a.js"
+  ]
+}

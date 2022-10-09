@@ -1,13 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.window{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 25vw;
+  background: linear-gradient( #13172b,  #ac7f92);
+  overflow: hidden;
+  position: relative;
+  margin-left: 30px;
+}
+.window2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 25vw;
+  background-color: rgb(7, 7, 7);
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+}
+.window3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  height: 80vh;
+  width: 25vw;
+  background-color: #748182;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+}
+.stars{
+  position: absolute;
+  width: 70vw;
+  animation: rotate 250s linear infinite;
+  bottom: -300px;
+}
+.space{
+  position: absolute;
+  width: 70vw;
+  animation: rotate 120s linear infinite;
+  bottom: -300px;
+}
+.jupiter{
+  width: 25vw;
+  position: absolute;
+  bottom: -150px;
+  animation: rotate 30s linear infinite;
+}
+.White{
+  height: 80vh;
+  width: 35vw;
+  position: absolute;
+  background-color: #fff;
+  animation: flash2 7s linear infinite;
+}
+.title{
+  position: absolute;
+  top: 40px;
+  color: white;
+  text-align: center;
+}
+.japnease-title{
+  margin-top: 30px;
+  color: white;
+
+}
+
+.Zenitsu{
+  position: absolute;
+  bottom: 0px;
+}
+#Zenitsu{
+  animation: flash 7s ease-in-out infinite;
+}
+@keyframes flash {
+  0%{
+    transform: translateX(100%);
+    filter: brightness(100%);
+  }
+  10%{
+    transform: translateX(100%);
+    filter: brightness(100%);
+  }
+  11%{
+    transform: translateX(0%);
+    filter: brightness(100%);
+  }
+  65%{
+    transform: translateX(0%);
+    filter: brightness(100%);
+  }
+  69%{
+    transform: translateX(0%);
+    filter: brightness(500%);
+  }
+  70%{
+    transform: translateX(-100%);
+    filter: brightness(200%);
+  }
+  100%{
+    filter: brightness(100%);
+    transform: translateX(-100%);
+  }
+}
+@keyframes flash2 {
+  0%{
+    opacity: 0;
+  }
+
+  69%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 1;
+  }
+  71%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  
+  }
+}
+
+@keyframes rotate {
+  50%{
+    transform: rotateZ(-180deg);
+  }
+  100%{
+    transform: rotateZ(-360deg);
+  }
+}
+
+#Hands, #Coat, #Coat2, #Coat3, #Left-Hand{
+  animation: movement1 5s ease-in-out infinite;
+}
+#Hair{
+  animation: movement2 4s ease-in-out infinite;
+}
+@keyframes movement1 {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  50%{
+    transform: rotateZ(1deg);
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes movement2 {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  50%{
+    transform: rotateZ(.5deg);
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
+}
+
+#Lightining1{
+  animation: flicker1 4s linear infinite;
+}
+#Lightning2{
+  animation: flicker1 4s linear infinite;
+  animation-delay: 400ms;
+}
+@keyframes flicker1 {
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 0;
+  }
+  12%{
+    opacity: 1;
+  }
+  13%{
+    opacity: 0;
+  }
+  14%{
+    opacity: 1;
+  }
+  15%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 0;
+  }
+  32%{
+    opacity: 1;
+  }
+  33%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 0;
+  }
+  72%{
+    opacity: 1;
+  }
+  73%{
+    opacity: 0;
+  }
+  74%{
+    opacity: 1;
+  }
+  75%{
+    opacity: 0;
+  }
+
+  99%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+#Smokes {
+  animation: fade 7s ease-in-out infinite;
+  transform-origin: bottom;
+}
+@keyframes fade {
+  0%{
+    opacity: 0;
+    transform: translateX(0%) scaleY(100%);
+  }
+  69%{
+    opacity: 0;
+    transform: translateX(0%) scaleY(100%);
+  }
+  70%{
+    opacity: 35%;
+    transform: translateX(0%) scaleY(100%);
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(70%) scaleY(120%);
+  }
+}
+.reflection{
+  position: absolute;
+  bottom: 10px;
+  transform: rotateX(180deg) translateY(-32%);
+  opacity: 20%;
+  filter: blur(50%);
+  backdrop-filter: blur(50%);
+  -webkit-backdrop-filter: blur(50%);
+}
+#Thunder1{
+  animation: flicker2 7s linear .0s infinite;
+}
+#Thunder2{
+  animation: flicker2 7s linear .2s infinite;
+}
+#Thunder3{
+  animation: flicker2 7s linear .4s infinite;
+}
+@keyframes flicker2 {
+  0%{
+    opacity: 0;
+  }
+  69%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 1;
+  }
+  71%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  76%{
+    opacity: 1;
+  }
+  77%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+#Dashes{
+  animation: dash 7s ease-in infinite;
+  transform-origin: right;
+}
+@keyframes dash {
+  0%{
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  69%{
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  70%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  71%{
+    transform: translateX(0%) scaleX(150%);
+    opacity: 1;
+  }
+  72%{
+    transform: translateX(-350%);
+    opacity: 0;
+  }
+  99%{
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(150%);
+    opacity: 0;
+  }
+}
+#FrontHair2 :nth-child(1){
+  animation: movement4 15s .2s linear infinite;
+}
+#FrontHair2 :nth-child(2){
+  animation: movement4 15s .4s linear infinite;
+}
+#FrontHair2 :nth-child(3){
+  animation: movement4 15s .6s linear infinite;
+}
+#FrontHair2 :nth-child(4){
+  animation: movement4 15s .8s linear infinite;
+}
+#FrontHair2 :nth-child(5){
+  animation: movement4 15s 1s linear infinite;
+}
+
+#FrontHair{
+  animation: movement3 7s linear infinite;
+  transform-origin: top;
+}
+#BackHair{
+  animation: movement3 7s 1s linear infinite;
+  transform-origin: top;
+}
+
+@keyframes movement3 {
+  0%{
+    transform: rotateZ(0deg);
+  } 
+  50%{
+    transform: rotateZ(1deg);
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes movement4 {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  50%{
+    transform: rotateZ(.2deg);
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
+}
+#Light{
+  animation: Shadow 3s linear infinite;
+}
+@keyframes Shadow {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(200%);
+  }
 }

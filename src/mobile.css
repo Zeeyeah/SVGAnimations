@@ -1,0 +1,30 @@
+@media (max-width: 500px) {
+    .App{
+        height: 300vh;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0%;
+    }
+    .window, .window2, .window3{
+        width: 100vw;
+        height: 100vh;
+        margin: 0%;
+    }
+    .space{
+        width: 230vw;
+        bottom: -200px;
+    }
+    .stars{
+        width: 230vw;
+        bottom: -200px;
+    }
+    .jupiter{
+        width: 100vw;
+    }
+    .White{
+        height: 100vh;
+        width: 100vw;
+    }
+    
+}
